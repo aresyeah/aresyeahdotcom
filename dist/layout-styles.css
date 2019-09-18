@@ -126,7 +126,7 @@ body {
 .profile-link {
   text-decoration: none;
   font-weight: bold;
-  padding-top: 25px;
+  align-self: center;
 }
 
 /* .show-all-button {
