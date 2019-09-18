@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+
+    <!-- Start of Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MBKTTNR");
+    </script>
+    <!-- End of Google Tag Manager -->
+
+    <!-- Start of Segment Manager -->
+    <script>
+      !(function() {
+        var analytics = (window.analytics = window.analytics || []);
+        if (!analytics.initialize)
+          if (analytics.invoked)
+            window.console &&
+              console.error &&
+              console.error("Segment snippet included twice.");
+          else {
+            analytics.invoked = !0;
+            analytics.methods = [
+              "trackSubmit",
+              "trackClick",
+              "trackLink",
+              "trackForm",
+              "pageview",
+              "identify",
+              "reset",
+              "group",
+              "track",
+              "ready",
+              "alias",
+              "debug",
+              "page",
+              "once",
+              "off",
+              "on"
+            ];
+            analytics.factory = function(t) {
+              return function() {
+                var e = Array.prototype.slice.call(arguments);
+                e.unshift(t);
+                analytics.push(e);
+                return analytics;
+              };
+            };
+            for (var t = 0; t < analytics.methods.length; t++) {
+              var e = analytics.methods[t];
+              analytics[e] = analytics.factory(e);
+            }
+            analytics.load = function(t, e) {
+              var n = document.createElement("script");
+              n.type = "text/javascript";
+              n.async = !0;
+              n.src =
+                "https://cdn.segment.com/analytics.js/v1/" +
+                t +
+                "/analytics.min.js";
+              var a = document.getElementsByTagName("script")[0];
+              a.parentNode.insertBefore(n, a);
+              analytics._loadOptions = e;
+            };
+            analytics.SNIPPET_VERSION = "4.1.0";
+            analytics.load("2QNRlRpTqvx7cBJrEUNJqG07L1om36Be");
+            analytics.page();
+          }
+      })();
+    </script>
+    <!-- End of Segment Manager -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+
+    <!-- Personal styles -->
+    <link href="layout-styles.css" rel="stylesheet" />
+
+    <!-- Add IntroJs styles -->
+    <link href="introjsfolder/introjs.css" rel="stylesheet" />
+    <link href="introjsfolder/bootstrap-responsive.min.css" rel="stylesheet" />
+
+    <!-- Start of Amplitude Tracking Snippet -->
+    <script type="text/javascript">
+      (function(e, t) {
+        var n = e.amplitude || { _q: [], _iq: {} };
+        var r = t.createElement("script");
+        r.type = "text/javascript";
+        r.integrity =
+          "sha384-d/yhnowERvm+7eCU79T/bYjOiMmq4F11ElWYLmt0ktvYEVgqLDazh4+gW9CKMpYW";
+        r.crossOrigin = "anonymous";
+        r.async = true;
+        r.src = "https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js";
+        r.onload = function() {
+          if (!e.amplitude.runQueuedFunctions) {
+            console.log("[Amplitude] Error: could not load SDK");
+          }
+        };
+        var i = t.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(r, i);
+        function s(e, t) {
+          e.prototype[t] = function() {
+            this._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+            return this;
+          };
+        }
+        var o = function() {
+          this._q = [];
+          return this;
+        };
+        var a = [
+          "add",
+          "append",
+          "clearAll",
+          "prepend",
+          "set",
+          "setOnce",
+          "unset"
+        ];
+        for (var u = 0; u < a.length; u++) {
+          s(o, a[u]);
+        }
+        n.Identify = o;
+        var c = function() {
+          this._q = [];
+          return this;
+        };
+        var l = [
+          "setProductId",
+          "setQuantity",
+          "setPrice",
+          "setRevenueType",
+          "setEventProperties"
+        ];
+        for (var p = 0; p < l.length; p++) {
+          s(c, l[p]);
+        }
+        n.Revenue = c;
+        var d = [
+          "init",
+          "logEvent",
+          "logRevenue",
+          "setUserId",
+          "setUserProperties",
+          "setOptOut",
+          "setVersionName",
+          "setDomain",
+          "setDeviceId",
+          "setGlobalUserProperties",
+          "identify",
+          "clearUserProperties",
+          "setGroup",
+          "logRevenueV2",
+          "regenerateDeviceId",
+          "groupIdentify",
+          "onInit",
+          "logEventWithTimestamp",
+          "logEventWithGroups",
+          "setSessionId",
+          "resetSessionId"
+        ];
+        function v(e) {
+          function t(t) {
+            e[t] = function() {
+              e._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          }
+          for (var n = 0; n < d.length; n++) {
+            t(d[n]);
+          }
+        }
+        v(n);
+        n.getInstance = function(e) {
+          e = (!e || e.length === 0 ? "$default_instance" : e).toLowerCase();
+          if (!n._iq.hasOwnProperty(e)) {
+            n._iq[e] = { _q: [] };
+            v(n._iq[e]);
+          }
+          return n._iq[e];
+        };
+        e.amplitude = n;
+      })(window, document);
+
+      amplitude.getInstance().init("a61421f9f74a54e2512e74bf7622db21");
+    </script>
+    <!-- End of Amplitude Tracking Snippet -->
+
+    <!-- Start of Async Drift Code -->
+    <script>
+      "use strict";
+
+      !(function() {
+        var t = (window.driftt = window.drift = window.driftt || []);
+        if (!t.init) {
+          if (t.invoked)
+            return void (
+              window.console &&
+              console.error &&
+              console.error("Drift snippet included twice.")
+            );
+          (t.invoked = !0),
+            (t.methods = [
+              "identify",
+              "config",
+              "track",
+              "reset",
+              "debug",
+              "show",
+              "ping",
+              "page",
+              "hide",
+              "off",
+              "on"
+            ]),
+            (t.factory = function(e) {
+              return function() {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }),
+            t.methods.forEach(function(e) {
+              t[e] = t.factory(e);
+            }),
+            (t.load = function(t) {
+              var e = 3e5,
+                n = Math.ceil(new Date() / e) * e,
+                o = document.createElement("script");
+              (o.type = "text/javascript"),
+                (o.async = !0),
+                (o.crossorigin = "anonymous"),
+                (o.src =
+                  "https://js.driftt.com/include/" + n + "/" + t + ".js");
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            });
+        }
+      })();
+      drift.SNIPPET_VERSION = "0.3.1";
+      drift.load("5vac3z4m6rgt");
+    </script>
+    <!-- End of Async Drift Code -->
+
+    <!-- Start of Heap Analytics Code -->
+    <script type="text/javascript">
+      (window.heap = window.heap || []),
+        (heap.load = function(e, t) {
+          (window.heap.appid = e), (window.heap.config = t = t || {});
+          var r = t.forceSSL || "https:" === document.location.protocol,
+            a = document.createElement("script");
+          (a.type = "text/javascript"),
+            (a.async = !0),
+            (a.src =
+              (r ? "https:" : "http:") +
+              "//cdn.heapanalytics.com/js/heap-" +
+              e +
+              ".js");
+          var n = document.getElementsByTagName("script")[0];
+          n.parentNode.insertBefore(a, n);
+          for (
+            var o = function(e) {
+                return function() {
+                  heap.push(
+                    [e].concat(Array.prototype.slice.call(arguments, 0))
+                  );
+                };
+              },
+              p = [
+                "addEventProperties",
+                "addUserProperties",
+                "clearEventProperties",
+                "identify",
+                "resetIdentity",
+                "removeEventProperty",
+                "setEventProperties",
+                "track",
+                "unsetEventProperty"
+              ],
+              c = 0;
+            c < p.length;
+            c++
+          )
+            heap[p[c]] = o(p[c]);
+        });
+      heap.load("1941255407");
+    </script>
+    <!--End of Heap Analytics Code -->
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MBKTTNR"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script
+      src="https://browser.sentry-cdn.com/5.4.3/bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      Sentry.init({
+        dsn: "https://7865fb1156d740f1886926c466f0379f@sentry.io/1491437"
+      });
+    </script>
+
+    <script></script>
+
+    <header>
+      <nav id="navbar">
+        <a class="nav-link" href="#welcome-section">About</a>
+        <a class="nav-link" href="#projects">Work</a>
+        <a class="nav-link" href="#contact-section">Contact</a>
+      </nav>
+    </header>
+
+    <section id="welcome-section">
+      <h1
+        onmouseover="this.style.color='blue'"
+        onmouseout="this.style.color='yellow'"
+        data-step="1"
+        data-intro="This is who I am"
+        data-position="top"
+      >
+        Hey, i'am Aresyeah.
+      </h1>
+      <p>a web developer</p>
+    </section>
+
+    <div id="product-tour">
+      <p>
+        I know the mount of content is overwhelming, so I built a product tour
+      </p>
+      <a
+        id="product-tour-btn"
+        href="javascript:void(0);"
+        onclick="javascript:introJs().start();"
+        >&#9978;Start your adventure!&#9978;</a
+      >
+    </div>
+
+    <section
+      id="projects"
+      data-step="2"
+      data-intro="You can find all my projects below. They are pretty good...I think."
+      data-position="top"
+    >
+      <h3>These are some of my projects..</h3>
+      <div id="project-tile-section">
+        <div class="project-tile">
+          <img
+            class="project-img"
+            src="https://personalportfolioimgs20190628.s3-us-west-1.amazonaws.com/imgs/1.JPG"
+            alt="img1"
+          />
+          <a
+            class="profile-link"
+            href="pomodoroclock/index.html"
+            target="_blank"
+            >Pomodoro Clock</a
+          >
+        </div>
+        <div class="project-tile">
+          <img
+            class="project-img"
+            src="https://personalportfolioimgs20190628.s3-us-west-1.amazonaws.com/imgs/3.JPG"
+            alt="img1"
+          />
+          <a class="profile-link" href="drummachine/index.html" target="_blank"
+            >Drum Machine</a
+          >
+        </div>
+        <div class="project-tile">
+          <img
+            class="project-img"
+            src="https://personalportfolioimgs20190628.s3-us-west-1.amazonaws.com/imgs/6.JPG"
+            alt="img1"
+          />
+          <a class="profile-link" href="jscalculator/index.html" target="_blank"
+            >JavaScript Calculator</a
+          >
+        </div>
+        <div class="project-tile">
+          <img
+            class="project-img"
+            src="https://personalportfolioimgs20190628.s3-us-west-1.amazonaws.com/imgs/4.JPG"
+            alt="img1"
+          />
+          <a class="profile-link" href="markdown/index.html" target="_blank"
+            >Markdown Previewer</a
+          >
+        </div>
+        <!--<div class='project-tile'>-->
+        <!--  <img class="project-img" src='https://personalportfolioimgs20190628.s3-us-west-1.amazonaws.com/imgs/IMG_4833.JPG'> -->
+        <!--  <a class='profile-link' href="quote/index.html" target="_blank">Quote Machine</a>-->
+        <!--</div>-->
+      </div>
+      <!-- <a
+        href="https://codepen.io/aresyeah/"
+        class="show-all-button"
+        target="_blank"
+        >Show all</a
+      > -->
+    </section>
+
+    <section
+      id="contact-section"
+      data-step="3"
+      data-intro="Here is how you can contact me. I personally prefer pigeon"
+      data-position="top"
+    >
+      <div id="contact-section-text">
+        <h1>Let's work together...</h1>
+        <p>How do you take your coffee?</p>
+      </div>
+
+      <div id="contact-tile-section">
+        <div class="contact-tile">
+          <a class="contact-button">Facebook</a>
+        </div>
+        <div class="contact-tile">
+          <a class="contact-button">Github</a>
+        </div>
+        <div class="contact-tile">
+          <a class="contact-button">Twitter</a>
+        </div>
+        <div class="contact-tile">
+          <a class="contact-button">Send a mail</a>
+        </div>
+        <div class="contact-tile">
+          <a class="contact-button">Send a pigeon</a>
+        </div>
+      </div>
+
+      <!--<div id='contact-tile-section'>-->
+      <!--    <div class='contact-tile'>-->
+      <!--      <a class ='contact-button' href="https://codepen.io/aresyeah/" target="_blank">Facebook</a>-->
+      <!--    </div>-->
+      <!--    <div class='contact-tile'>-->
+      <!--      <a class ='contact-button' href="https://codepen.io/aresyeah/" target="_blank">Github</a>-->
+      <!--    </div>-->
+      <!--    <div class='contact-tile'>-->
+      <!--      <a class ='contact-button' href="https://codepen.io/aresyeah/" target="_blank">Twitter</a>-->
+      <!--    </div>-->
+      <!--    <div class='contact-tile'>-->
+      <!--      <a class ='contact-button' href="https://codepen.io/aresyeah/" target="_blank">Send a mail</a>-->
+      <!--    </div>-->
+      <!--    <div class='contact-tile'>-->
+      <!--      <a class ='contact-button' href="https://codepen.io/aresyeah/" target="_blank">Send a pigeon</a>-->
+      <!--    </div>-->
+      <!--</div>-->
+    </section>
+
+    <div
+      data-step="4"
+      data-intro="Don't forget to check out the cool chatbot on the right &#128073;&#128073;&#128073;&#128073;&#128073;"
+      data-position="top"
+    >
+      <!--<p style="text-align:center">COOL iframe below</p>-->
+      <!--<div class='iframe-test'>-->
+      <!--    <iframe src="pomodoroclock/index.html" style="height:500px;width:100%;border:none"></iframe>-->
+      <!--</div>-->
+      <!-- Add typeform for "how did you hear about me" survey-->
+      <!--<div class="typeform-widget" data-url="https://yezhang.typeform.com/to/AUdm0G" data-transparency="40" data-hide-headers=true data-hide-footer=true style="width: 300px; height: 300px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=AUdm0G&utm_source=typeform.com-14171969-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>-->
+      <!--</div>-->
+
+      <!-- Add intro.js for product tour-->
+      <script type="text/javascript" src="introjsfolder/intro.js"></script>
+
+      <!-- Add Mailchimp welcome email signup form -->
+      <script
+        type="text/javascript"
+        src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+        data-dojo-config="usePlainJson: true, isDebug: false"
+      ></script
+      ><script type="text/javascript">
+        window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
+          L.start({
+            baseUrl: "mc.us3.list-manage.com",
+            uuid: "1050d72c9f4764ca814e86fb9",
+            lid: "d42fef8ac2",
+            uniqueMethods: true
+          });
+        });
+      </script>
+
+      <footer>
+        <p>&copy; Copyright 2019, Ye Enterprise</p>
+      </footer>
+    </div>
+  </body>
+</html>
