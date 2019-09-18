@@ -25,11 +25,11 @@ body {
 }
 
 .nav-link {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   font-size: 1.1em;
-  color: #008080;
+  color: #064c53;
 }
 
 #welcome-section {
@@ -49,7 +49,7 @@ body {
 #welcome-section p {
   align-self: start;
   margin: 0;
-  color: #008041;
+  color: #064c53;
 }
 
 #product-tour {
@@ -70,7 +70,7 @@ body {
   background-color: #e0ebe8;
   border: 2px solid #add8e6;
   border-radius: 5%;
-  color: #1f8783;
+  color: #064c53;
   font-size: 16px;
   cursor: pointer;
   text-decoration: none;
@@ -93,7 +93,7 @@ body {
 
 #projects h3 {
   text-align: center;
-  color: #1f8783;
+  color: #064c53;
   font-size: 1.5em;
   margin-top: 35px;
   margin-bottom: 35px;
@@ -138,7 +138,7 @@ body {
   background-color: #e0ebe8;
   border: 2px solid #add8e6;
   border-radius: 5%;
-  color: #1f8783;
+  color: #064c53;
   cursor: pointer;
   text-decoration: none;
   width: 7em;
@@ -167,7 +167,7 @@ body {
 #contact-section {
   display: grid;
   background-color: #c8f7c5;
-  height: 500px;
+  height: 100vh;
   grid-template-rows: 35% 65%;
   align-items: center;
   margin-top: 3em;
@@ -215,7 +215,7 @@ body {
 .contact-button {
   text-decoration: none;
   font-size: 16px;
-  color: #1f8783;
+  color: #064c53;
   font-weight: 700;
 }
 
@@ -233,6 +233,14 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    padding: 0 !important ;
+  }
+
+  .nav-link {
+    padding: 10px;
+    font-size: 0.9em;
+  }
   #product-tour p {
     font-size: 20px;
   }
@@ -253,10 +261,6 @@ footer p {
     text-decoration: none;
     font-size: 13px;
     padding-top: 15px;
-  }
-
-  #contact-section {
-    height: 800px;
   }
 
   #contact-tile-section {
@@ -281,7 +285,7 @@ footer p {
   .contact-button {
     text-decoration: none;
     font-size: 10px;
-    color: #1f8783;
+    color: #064c53;
     font-weight: 100;
   }
 
