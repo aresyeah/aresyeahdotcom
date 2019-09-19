@@ -127,12 +127,6 @@ body {
   border: 1.5px solid #add8e6;
 }
 
-.project-tile a {
-  letter-spacing: 0.05rem;
-  /* border: 1px solid blue; */
-  padding: 0.7em 0.9em;
-}
-
 .profile-link {
   text-decoration: none;
   font-weight: bold;
@@ -264,6 +258,12 @@ footer p {
 
   .project-tile {
     grid-template-columns: 180px;
+  }
+
+  .project-tile a {
+    letter-spacing: 0.05rem;
+    /* border: 1px solid blue; */
+    padding: 0.7em 0.9em;
   }
 
   .profile-link {
